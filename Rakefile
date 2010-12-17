@@ -15,8 +15,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "negative-method"
   gem.homepage = "http://github.com/vinhtiensinh/negative-method"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{generate negative methods base on existing positive method, if you have object.good? you will automatically have object.not_good?}
+  gem.description = %Q{generate negative methods base on existing positive method, if you have object.good? you will automatically have object.not_good}
   gem.email = "vinhtiensinh@yahoo.com"
   gem.authors = ["Vinh Tran"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
