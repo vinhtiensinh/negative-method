@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Vinh Tran"]
   s.date = %q{2010-12-17}
-  s.description = %q{this gem create negative method so instead of calling !object.nil?, you can call object.not_nil?}
+  s.description = %q{TODO: longer description of your gem}
   s.email = %q{vinhtiensinh@yahoo.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -33,7 +33,7 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{the gem basically create a negative method base on existing positive method, so if you have a method call object.good? you can also call object.not_good?}
+  s.summary = %q{TODO: one-line summary of your gem}
   s.test_files = [
     "test/helper.rb",
     "test/test_negative-method.rb"
