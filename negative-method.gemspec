@@ -24,10 +24,15 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
-    "lib/negative-method.rb",
+    "lib/negative_method.rb",
+    "list/.gitignore",
+    "list/Gemfile",
+    "list/Rakefile",
+    "list/lib/list.rb",
+    "list/lib/list/version.rb",
+    "list/list.gemspec",
     "negative-method.gemspec",
-    "test/helper.rb",
-    "test/test_negative-method.rb"
+    "spec/negative-method_spec.rb"
   ]
   s.homepage = %q{http://github.com/vinhtiensinh/negative-method}
   s.licenses = ["MIT"]
@@ -35,8 +40,7 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.3.7}
   s.summary = %q{generate negative methods base on existing positive method, if you have object.good? you will automatically have object.not_good?}
   s.test_files = [
-    "test/helper.rb",
-    "test/test_negative-method.rb"
+    "spec/negative-method_spec.rb"
   ]
 
   if s.respond_to? :specification_version then
@@ -44,18 +48,18 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_development_dependency(%q<shoulda>, [">= 0"])
+      s.add_development_dependency(%q<rspec>, ["= 1.3.1"])
       s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.5.1"])
       s.add_development_dependency(%q<rcov>, [">= 0"])
     else
-      s.add_dependency(%q<shoulda>, [">= 0"])
+      s.add_dependency(%q<rspec>, ["= 1.3.1"])
       s.add_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_dependency(%q<jeweler>, ["~> 1.5.1"])
       s.add_dependency(%q<rcov>, [">= 0"])
     end
   else
-    s.add_dependency(%q<shoulda>, [">= 0"])
+    s.add_dependency(%q<rspec>, ["= 1.3.1"])
     s.add_dependency(%q<bundler>, ["~> 1.0.0"])
     s.add_dependency(%q<jeweler>, ["~> 1.5.1"])
     s.add_dependency(%q<rcov>, [">= 0"])
