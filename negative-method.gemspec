@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "lib/negative-method.rb",
+    "negative-method.gemspec",
     "test/helper.rb",
     "test/test_negative-method.rb"
   ]
