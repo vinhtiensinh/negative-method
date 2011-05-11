@@ -1,6 +1,14 @@
 = negative-method
 
-Description goes here.
+Negative methods automatically add negative method check for your module.
+If you have object.is_valid? then the following methods will be available.
+
+object.not_is_valid?
+object.is_not_valid?
+object.is_valid_not?
+
+if one of the methods has been manually defined. that method will take precedent.
+
 
 == Contributing to negative-method
  
