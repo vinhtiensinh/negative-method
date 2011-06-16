@@ -10,7 +10,7 @@ describe NegativeMethod do
     lambda { test.hasNotBeenDefined }.should raise_error
   end
 
-  it "should raise error if the original method is undefined" do
+  it "should raise error if the positive method is undefined" do
     test = TestClass.new
     lambda { test.not_defined }.should raise_error
   end
