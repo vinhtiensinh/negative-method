@@ -1,4 +1,5 @@
 module NegativeMethod
+  alias :_method_missing :method_missing
   def method_missing(negative_method_name, *args)
 
     positive_method = get_positive_method_from negative_method_name.to_s
@@ -6,7 +7,7 @@ module NegativeMethod
         return !self.send(positive_method, *args)
     end
 
-    super
+    _method_missing negative_method_name, *args
   end
 
   def get_positive_method_from method_name
