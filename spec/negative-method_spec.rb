@@ -38,4 +38,10 @@ describe NegativeMethod do
     test.should_receive(:has?).with('element').and_return(true)
     test.has_not?('element').should == false
   end
+
+  it "should negate method with 'no_' at the start" do
+    test = TestClass.new
+    test.should_receive(:good?).with('element').and_return(true)
+    test.no_good?('element').should == false
+  end
 end

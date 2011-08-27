@@ -11,7 +11,9 @@ module NegativeMethod
   end
 
   def get_positive_method_from method_name
-    if method_name.match(/^not_/) || method_name.match(/_not_/)
+    if method_name.match(/^no_/)
+      return method_name.sub(/no_/,'')
+    elsif method_name.match(/^not_/) || method_name.match(/_not_/)
       return method_name.sub(/not_/,'')
     elsif method_name.match(/_not$/) || method_name.match(/_not?/)
       return method_name.sub(/_not/,'')
